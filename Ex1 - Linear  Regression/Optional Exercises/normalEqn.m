@@ -11,7 +11,7 @@ theta = inv(X'*X)*X'*y;
 % ============================================================
 % Another option:
 %
-% $pinv(X) = inv(X^T*X)*X^T$ 
+% pinv(X) = inv(X'*X)*X' 
 %
 % And so:
 % theta = pinv(X)*y
