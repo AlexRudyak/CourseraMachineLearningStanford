@@ -1,0 +1,18 @@
+function [theta] = normalEqn(X, y)
+%NORMALEQN Computes the closed-form solution to linear regression 
+%   NORMALEQN(X,y) computes the closed-form solution to linear 
+%   regression using the normal equations.
+
+% ====================== YOUR CODE HERE ======================
+% Instructions: Complete the code to compute the closed form solution
+%               to linear regression and put the result in theta.
+%
+theta = inv(X'*X)*X'*y;
+% ============================================================
+% Another option:
+%
+% $pinv(X) = inv(X^T*X)*X^T$ 
+%
+% And so:
+% theta = pinv(X)*y
+end
