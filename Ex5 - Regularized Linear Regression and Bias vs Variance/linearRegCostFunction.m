@@ -15,10 +15,12 @@ m = length(y); % number of training examples
 %
 hypothesis = X*theta;
 J = (1/(2*m))*sum((hypothesis - y).^2) + lambda/(2*m)*sum(theta(2:end).^2);
-grad = (1/m)*sum((hypothesis - y)*X(2:end)) + (lambda/m).*theta(2:end);
+grad = (1/m)*((hypothesis - y)'*X)' + (lambda/m).*theta.*[0; ones(length(theta)-1, 1)];
 % =========================================================================
 
 grad = grad(:);
 % For Debugging
-% size((X*theta-y)*X(2:end))
+% size(X')
+% size((hypothesis - y))
+% size(X'*(hypothesis - y))
 end
