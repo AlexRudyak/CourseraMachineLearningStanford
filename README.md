@@ -5,7 +5,7 @@ I've decided to upload all my Answers to GitHub.
 
 ---
 
-**I highly recommend taking the course, found at this link:**
+**I highly recommend taking the course by Andrew Ng, found at this link:**
 **https://www.coursera.org/learn/machine-learning**<br>
 **Probobly the best course in the world for machine learning.**
 
